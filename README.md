@@ -16,7 +16,7 @@ composer require eurolink/sagepay-form-php
 ## Usage
 
 ``` php
-$sagePay = new Eurolink\SagePayForm();
+$sagePay = new Eurolink\SagePayForm\Builder();
 echo $sagePay->echoPhrase('Hello, Eurolink!');
 ```
 
