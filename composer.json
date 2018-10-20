@@ -2,7 +2,7 @@
     "name": "eurolink/sagepay-form-php",
     "description": "A simple package to integrate SagePay Form v3.00 into your website.",
     "keywords": [
-        "eurolink",
+        "eurolink"
     ],
     "homepage": "https://github.com/eurolink/sagepay-form-php",
     "license": "MIT",
