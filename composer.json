@@ -1,0 +1,41 @@
+{
+    "name": "eurolink/sagepay-form-php",
+    "description": "A simple package to integrate SagePay Form v3.00 into your website.",
+    "keywords": [
+        "eurolink",
+    ],
+    "homepage": "https://github.com/eurolink/sagepay-form-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eurolink",
+            "email": "support@eurolink.co",
+            "homepage": "https://www.eurolink.co/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eurolink\\SagePayForm\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eurolink\\SagePayForm\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
