@@ -63,17 +63,6 @@ class Builder
         $this->settings = $settings;
     }
 
-    /**
-     * Friendly welcome.
-     *
-     * @param string $phrase Phrase to return
-     * @return string Returns the phrase passed in
-     */
-    public function echoPhrase($phrase)
-    {
-        return $phrase;
-    }
-
     public function getCrypt()
     {
         $cryptString = 'VendorTxCode=' . $this->getVendorTxCode();
@@ -728,14 +717,14 @@ class Builder
         return $outcomes[$this->getResponseStatus()];
     }
 
-    public function getResponseTransactionID()
-    {
-        return $this->sagePayResponse['VPSTxId'];
-    }
-
     public function getResponseVendorCode()
     {
         return $this->sagePayResponse['VendorTxCode'];
+    }
+
+    public function getResponseTransactionID()
+    {
+        return $this->sagePayResponse['VPSTxId'];
     }
 
     public function getResponseTransactionIDFormatted()
